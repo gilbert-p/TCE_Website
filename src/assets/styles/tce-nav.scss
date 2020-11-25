@@ -1,0 +1,80 @@
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #323232;
+  z-index: 9999;
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .tce-logo {
+      width: 80px;
+
+      > img {
+        background-size: cover;
+        width: 100%;
+      }
+    }
+
+    .company-name {
+      margin-left: 10px;
+      display: inline-block;
+      width: 220px;
+      > h1 {
+        color: white;
+        font-size: 16px;
+      }
+    }
+
+    .nav-button {
+      width: 50px;
+      height: 50px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .gg-menu-boxed {
+        left: 50%;
+        top: 50%;
+        color: white;
+        transform: translate(-50%, -50%) scale(var(--ggs, 2.5));
+      }
+    }
+  }
+}
+
+.mobile-menu-container {
+  position: fixed;
+  opacity: 0;
+  left: 100%;
+  // transform: translateX(-100%);
+  width: 175px;
+  height: 100vh;
+  margin-top: 80px;
+  background-color: #3f3f3f;
+  z-index: 9999;
+
+  .mobile-nav-container {
+    position: relative;
+    width: calc(100%);
+    margin-left: auto;
+    height: 300px;
+    // background-color: lightgrey;
+
+    ul {
+      text-align: center;
+      padding-top: 30px;
+      > li {
+        font-weight: bold;
+        margin-bottom: 1.3em;
+        list-style: none;
+        color: white;
+      }
+    }
+  }
+}
