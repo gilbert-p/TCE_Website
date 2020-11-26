@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/styles/tce_footer.scss";
 
 const TCE_Footer = () => {
   return (

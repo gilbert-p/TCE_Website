@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/styles/tce-nav.scss";
+import "../assets/styles/tce_nav.scss";
 import tce_logo from "../assets/img/TCE_LOGO@sm.png";
 import { gsap } from "gsap";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/landing-hero.scss";
+import "../assets/styles/landing_hero.scss";
 import landing_hero_img from "../assets/img/hero_img_sm.png";
 
 const landing_hero = () => {
