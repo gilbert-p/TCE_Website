@@ -11,6 +11,7 @@
     "firebase": "^8.1.1",
     "firebase-admin": "^9.4.1",
     "gsap": "file:../../Assets/gsap-bonus.tgz",
+    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",

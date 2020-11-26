@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/landing_hero.scss";
-import landing_hero_img from "../assets/img/hero_img_sm.png";
+import landing_hero_img_sm from "../assets/img/hero_img_sm.png";
+import landing_hero_img_lg from "../assets/img/hero_img_lg.png";
+import useBreakpoints from "../custom_hooks/useBreakpoint";
 
-const landing_hero = () => {
+const Landing_Hero = () => {
+  const [screen, setScreen] = useState(useBreakpoints());
+  console.log(screen);
+
   return (
     <section className="hero-section">
       <div className="hero-container">
         <div className="hero-img-container">
-          <img src={landing_hero_img} alt="company vans tce" />
+          {screen === "md" || screen === "lg" ? (
+            <img src={landing_hero_img_lg} alt="company vans tce" />
+          ) : (
+            <img src={landing_hero_img_sm} alt="company vans tce" />
+          )}
         </div>
         <div className="hero-content">
           <div className="title-container">
@@ -28,4 +37,4 @@ const landing_hero = () => {
   );
 };
 
-export default landing_hero;
+export default Landing_Hero;

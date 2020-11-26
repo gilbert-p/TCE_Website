@@ -90,8 +90,8 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-    height: 470px;
-    background-color: lightskyblue;
+    height: 420px;
+    // background-color: lightskyblue;
     .hero-content {
       left: 50%;
       top: 50%;
@@ -105,6 +105,17 @@
       }
       .hero-subtitle {
         margin-bottom: 30px;
+      }
+    }
+    &:after {
+      height: 380px;
+    }
+
+    .hero-img-container {
+      overflow: hidden;
+      > img {
+        height: 100%;
+        width: 1200px;
       }
     }
   }
