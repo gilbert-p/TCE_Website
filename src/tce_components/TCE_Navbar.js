@@ -39,6 +39,15 @@ const TCE_navbar = () => {
           <div className="nav-button" onClick={mobileMenu}>
             <i className="gg-menu-boxed"></i>
           </div>
+
+          <div className="nav-links-container">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="mobile-menu-container">

@@ -32,3 +32,10 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .cta-apply-container {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

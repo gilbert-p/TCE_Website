@@ -45,6 +45,10 @@
         transform: translate(-50%, -50%) scale(var(--ggs, 2));
       }
     }
+
+    .nav-links-container {
+      display: none;
+    }
   }
 }
 
@@ -72,11 +76,54 @@
       > li {
         font-weight: bold;
         margin-bottom: 1.3em;
-        list-style: none;
         color: white;
 
         &:hover {
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    max-width: 1120px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .navbar-content {
+      .nav-button {
+        display: none;
+      }
+
+      .company-name {
+        padding-top: 1em;
+        // background-color: lightskyblue;
+        width: auto;
+      }
+
+      .nav-links-container {
+        display: inline-block;
+        width: 420px;
+        height: 2em;
+        // background-color: lightblue;
+
+        > ul {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 0;
+          padding: 0;
+          padding-top: 1em;
+
+          > li {
+            color: white;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
         }
       }
     }

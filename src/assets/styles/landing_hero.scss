@@ -17,7 +17,7 @@
     top: 0;
 
     background-color: #222222;
-    opacity: 25%;
+    opacity: 40%;
     z-index: -1;
   }
 
@@ -50,7 +50,7 @@
       //   display: block;
       // }
 
-      h2 {
+      > h2 {
         // height: 20px;
         margin-bottom: -10px;
         font-size: 40px;
@@ -102,6 +102,10 @@
         flex-direction: row;
         left: 50%;
         margin-bottom: 20px;
+
+        > h2:nth-child(n + 2) {
+          margin-left: 20px;
+        }
       }
       .hero-subtitle {
         margin-bottom: 30px;
