@@ -27,6 +27,10 @@ li {
   padding: 0;
   list-style: none;
 }
+a {
+  color: white;
+  text-decoration-line: none;
+}
 
 body {
   margin: 0;

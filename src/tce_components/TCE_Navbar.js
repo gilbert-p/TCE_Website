@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/styles/tce_nav.scss";
 import tce_logo from "../assets/img/TCE_LOGO@sm.png";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
 const TCE_navbar = () => {
@@ -42,8 +43,12 @@ const TCE_navbar = () => {
 
           <div className="nav-links-container">
             <ul>
-              <li>Home</li>
-              <li>About</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
               <li>Careers</li>
               <li>Contact</li>
             </ul>
@@ -53,8 +58,12 @@ const TCE_navbar = () => {
       <div className="mobile-menu-container">
         <div className="mobile-nav-container">
           <ul>
-            <li>Home</li>
-            <li>About</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
             <li>Careers</li>
             <li>Contact</li>
           </ul>

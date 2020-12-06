@@ -1,0 +1,129 @@
+.about-company {
+  position: relative;
+  width: 100%;
+
+  .company-summary {
+    position: relative;
+    max-width: 420px;
+    min-width: 320px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+
+    #about-title {
+      text-align: center;
+      > h2 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      //   &:after {
+      //     content: "";
+      //     position: absolute;
+      //     text-align: center;
+      //     width: 35ch;
+      //     height: 3px;
+      //     left: inherit;
+      //     top: inherit;
+      //     transform: translate(-50%, 100%);
+      //     // padding-top: 10px;
+      //     background-color: black;
+      //   }
+    }
+
+    #summary-description {
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
+
+  .bio-block {
+    position: relative;
+    display: block;
+    height: auto;
+    max-width: 420px;
+    margin-bottom: 100px;
+    background-color: #3c3c3c;
+
+    padding: 20px 20px 30px 20px;
+
+    .bio-img {
+      width: 100%;
+      height: auto;
+      > img {
+        background-size: cover;
+        width: 100%;
+      }
+    }
+    .bio-title-info {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-width: 420px;
+      min-width: 320px;
+      text-align: left;
+
+      .bio-title {
+        margin-left: -1px;
+        > h2 {
+          font-size: 2em;
+          color: white;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .bio-subtitle {
+        > h3 {
+          font-size: 1.8em;
+          color: white;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    .bio-summary {
+      > p {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    height: 420px;
+    // background-color: lightskyblue;
+    .hero-content {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 700px;
+      margin: 0;
+      .title-container {
+        flex-direction: row;
+        left: 50%;
+        margin-bottom: 20px;
+
+        > h2:nth-child(n + 2) {
+          margin-left: 20px;
+        }
+      }
+      .hero-subtitle {
+        margin-bottom: 30px;
+      }
+    }
+    &:after {
+      height: 380px;
+    }
+
+    .hero-img-container {
+      overflow: hidden;
+      > img {
+        height: 100%;
+        width: 1200px;
+      }
+    }
+  }
+}

@@ -6,7 +6,6 @@ import useBreakpoints from "../custom_hooks/useBreakpoint";
 
 const Landing_Hero = () => {
   const [screen, setScreen] = useState(useBreakpoints());
-  console.log(screen);
 
   return (
     <section className="hero-section">
