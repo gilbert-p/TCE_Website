@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/TCE_Website/static/css/main.931ac201.chunk.css",
-    "main.js": "/TCE_Website/static/js/main.fcb1e8bc.chunk.js",
-    "main.js.map": "/TCE_Website/static/js/main.fcb1e8bc.chunk.js.map",
-    "runtime-main.js": "/TCE_Website/static/js/runtime-main.dbb497bd.js",
-    "runtime-main.js.map": "/TCE_Website/static/js/runtime-main.dbb497bd.js.map",
+    "main.css": "/TCE_Website/static/css/main.34dc87c4.chunk.css",
+    "main.js": "/TCE_Website/static/js/main.b6bb28d6.chunk.js",
+    "main.js.map": "/TCE_Website/static/js/main.b6bb28d6.chunk.js.map",
+    "runtime-main.js": "/TCE_Website/static/js/runtime-main.0197a88c.js",
+    "runtime-main.js.map": "/TCE_Website/static/js/runtime-main.0197a88c.js.map",
     "static/css/2.aaca67c1.chunk.css": "/TCE_Website/static/css/2.aaca67c1.chunk.css",
-    "static/js/2.f08450e0.chunk.js": "/TCE_Website/static/js/2.f08450e0.chunk.js",
-    "static/js/2.f08450e0.chunk.js.map": "/TCE_Website/static/js/2.f08450e0.chunk.js.map",
-    "static/js/3.14d1b98b.chunk.js": "/TCE_Website/static/js/3.14d1b98b.chunk.js",
-    "static/js/3.14d1b98b.chunk.js.map": "/TCE_Website/static/js/3.14d1b98b.chunk.js.map",
+    "static/js/2.d879cfd3.chunk.js": "/TCE_Website/static/js/2.d879cfd3.chunk.js",
+    "static/js/2.d879cfd3.chunk.js.map": "/TCE_Website/static/js/2.d879cfd3.chunk.js.map",
+    "static/js/3.2a616a68.chunk.js": "/TCE_Website/static/js/3.2a616a68.chunk.js",
+    "static/js/3.2a616a68.chunk.js.map": "/TCE_Website/static/js/3.2a616a68.chunk.js.map",
     "index.html": "/TCE_Website/index.html",
     "static/css/2.aaca67c1.chunk.css.map": "/TCE_Website/static/css/2.aaca67c1.chunk.css.map",
-    "static/css/main.931ac201.chunk.css.map": "/TCE_Website/static/css/main.931ac201.chunk.css.map",
-    "static/js/2.f08450e0.chunk.js.LICENSE.txt": "/TCE_Website/static/js/2.f08450e0.chunk.js.LICENSE.txt",
+    "static/css/main.34dc87c4.chunk.css.map": "/TCE_Website/static/css/main.34dc87c4.chunk.css.map",
+    "static/js/2.d879cfd3.chunk.js.LICENSE.txt": "/TCE_Website/static/js/2.d879cfd3.chunk.js.LICENSE.txt",
+    "static/media/DAX7_google_maps.71372353.png": "/TCE_Website/static/media/DAX7_google_maps.71372353.png",
     "static/media/all.svg": "/TCE_Website/static/media/all.10d15173.svg",
     "static/media/community_img_sm.92f536b3.png": "/TCE_Website/static/media/community_img_sm.92f536b3.png",
     "static/media/driver_img_sm.98fed5db.png": "/TCE_Website/static/media/driver_img_sm.98fed5db.png",
@@ -26,10 +27,10 @@
     "static/media/tce_team_pic_sm.065933c8.png": "/TCE_Website/static/media/tce_team_pic_sm.065933c8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dbb497bd.js",
+    "static/js/runtime-main.0197a88c.js",
     "static/css/2.aaca67c1.chunk.css",
-    "static/js/2.f08450e0.chunk.js",
-    "static/css/main.931ac201.chunk.css",
-    "static/js/main.fcb1e8bc.chunk.js"
+    "static/js/2.d879cfd3.chunk.js",
+    "static/css/main.34dc87c4.chunk.css",
+    "static/js/main.b6bb28d6.chunk.js"
   ]
 }
