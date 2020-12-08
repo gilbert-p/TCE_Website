@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TCE_Website/static/css/main.34dc87c4.chunk.css",
+    "main.css": "/TCE_Website/static/css/main.64b134bc.chunk.css",
     "main.js": "/TCE_Website/static/js/main.cf481a05.chunk.js",
     "main.js.map": "/TCE_Website/static/js/main.cf481a05.chunk.js.map",
     "runtime-main.js": "/TCE_Website/static/js/runtime-main.0197a88c.js",
@@ -12,7 +12,7 @@
     "static/js/3.2a616a68.chunk.js.map": "/TCE_Website/static/js/3.2a616a68.chunk.js.map",
     "index.html": "/TCE_Website/index.html",
     "static/css/2.aaca67c1.chunk.css.map": "/TCE_Website/static/css/2.aaca67c1.chunk.css.map",
-    "static/css/main.34dc87c4.chunk.css.map": "/TCE_Website/static/css/main.34dc87c4.chunk.css.map",
+    "static/css/main.64b134bc.chunk.css.map": "/TCE_Website/static/css/main.64b134bc.chunk.css.map",
     "static/js/2.d879cfd3.chunk.js.LICENSE.txt": "/TCE_Website/static/js/2.d879cfd3.chunk.js.LICENSE.txt",
     "static/media/DAX7_google_maps.71372353.png": "/TCE_Website/static/media/DAX7_google_maps.71372353.png",
     "static/media/all.svg": "/TCE_Website/static/media/all.10d15173.svg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.0197a88c.js",
     "static/css/2.aaca67c1.chunk.css",
     "static/js/2.d879cfd3.chunk.js",
-    "static/css/main.34dc87c4.chunk.css",
+    "static/css/main.64b134bc.chunk.css",
     "static/js/main.cf481a05.chunk.js"
   ]
 }
