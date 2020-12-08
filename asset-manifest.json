@@ -1,31 +1,35 @@
 {
   "files": {
-    "main.css": "/TCE_Website/static/css/main.3659b676.chunk.css",
-    "main.js": "/TCE_Website/static/js/main.1ebeadad.chunk.js",
-    "main.js.map": "/TCE_Website/static/js/main.1ebeadad.chunk.js.map",
-    "runtime-main.js": "/TCE_Website/static/js/runtime-main.bf8e4541.js",
-    "runtime-main.js.map": "/TCE_Website/static/js/runtime-main.bf8e4541.js.map",
+    "main.css": "/TCE_Website/static/css/main.931ac201.chunk.css",
+    "main.js": "/TCE_Website/static/js/main.fcb1e8bc.chunk.js",
+    "main.js.map": "/TCE_Website/static/js/main.fcb1e8bc.chunk.js.map",
+    "runtime-main.js": "/TCE_Website/static/js/runtime-main.dbb497bd.js",
+    "runtime-main.js.map": "/TCE_Website/static/js/runtime-main.dbb497bd.js.map",
     "static/css/2.aaca67c1.chunk.css": "/TCE_Website/static/css/2.aaca67c1.chunk.css",
-    "static/js/2.a33444c3.chunk.js": "/TCE_Website/static/js/2.a33444c3.chunk.js",
-    "static/js/2.a33444c3.chunk.js.map": "/TCE_Website/static/js/2.a33444c3.chunk.js.map",
-    "static/js/3.09223510.chunk.js": "/TCE_Website/static/js/3.09223510.chunk.js",
-    "static/js/3.09223510.chunk.js.map": "/TCE_Website/static/js/3.09223510.chunk.js.map",
+    "static/js/2.f08450e0.chunk.js": "/TCE_Website/static/js/2.f08450e0.chunk.js",
+    "static/js/2.f08450e0.chunk.js.map": "/TCE_Website/static/js/2.f08450e0.chunk.js.map",
+    "static/js/3.14d1b98b.chunk.js": "/TCE_Website/static/js/3.14d1b98b.chunk.js",
+    "static/js/3.14d1b98b.chunk.js.map": "/TCE_Website/static/js/3.14d1b98b.chunk.js.map",
     "index.html": "/TCE_Website/index.html",
     "static/css/2.aaca67c1.chunk.css.map": "/TCE_Website/static/css/2.aaca67c1.chunk.css.map",
-    "static/css/main.3659b676.chunk.css.map": "/TCE_Website/static/css/main.3659b676.chunk.css.map",
-    "static/js/2.a33444c3.chunk.js.LICENSE.txt": "/TCE_Website/static/js/2.a33444c3.chunk.js.LICENSE.txt",
+    "static/css/main.931ac201.chunk.css.map": "/TCE_Website/static/css/main.931ac201.chunk.css.map",
+    "static/js/2.f08450e0.chunk.js.LICENSE.txt": "/TCE_Website/static/js/2.f08450e0.chunk.js.LICENSE.txt",
     "static/media/all.svg": "/TCE_Website/static/media/all.10d15173.svg",
     "static/media/community_img_sm.92f536b3.png": "/TCE_Website/static/media/community_img_sm.92f536b3.png",
     "static/media/driver_img_sm.98fed5db.png": "/TCE_Website/static/media/driver_img_sm.98fed5db.png",
     "static/media/dsp_img_sm.0b51d06b.png": "/TCE_Website/static/media/dsp_img_sm.0b51d06b.png",
-    "static/media/hero_img_sm.c91fb156.png": "/TCE_Website/static/media/hero_img_sm.c91fb156.png",
-    "static/media/mission_img_sm.277bf0f0.png": "/TCE_Website/static/media/mission_img_sm.277bf0f0.png"
+    "static/media/eric_culberson_portrait.6352f437.png": "/TCE_Website/static/media/eric_culberson_portrait.6352f437.png",
+    "static/media/hero_img_lg.e196defc.png": "/TCE_Website/static/media/hero_img_lg.e196defc.png",
+    "static/media/hero_img_sm.588f9b08.png": "/TCE_Website/static/media/hero_img_sm.588f9b08.png",
+    "static/media/mission_img_sm.277bf0f0.png": "/TCE_Website/static/media/mission_img_sm.277bf0f0.png",
+    "static/media/tce_team_pic.085e49b6.png": "/TCE_Website/static/media/tce_team_pic.085e49b6.png",
+    "static/media/tce_team_pic_sm.065933c8.png": "/TCE_Website/static/media/tce_team_pic_sm.065933c8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf8e4541.js",
+    "static/js/runtime-main.dbb497bd.js",
     "static/css/2.aaca67c1.chunk.css",
-    "static/js/2.a33444c3.chunk.js",
-    "static/css/main.3659b676.chunk.css",
-    "static/js/main.1ebeadad.chunk.js"
+    "static/js/2.f08450e0.chunk.js",
+    "static/css/main.931ac201.chunk.css",
+    "static/js/main.fcb1e8bc.chunk.js"
   ]
 }
