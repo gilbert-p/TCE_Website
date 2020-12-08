@@ -26,6 +26,9 @@ function Main() {
               <Route path="/careers">
                 <Careers />
               </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
             </Switch>
           </div>
           <Footer />

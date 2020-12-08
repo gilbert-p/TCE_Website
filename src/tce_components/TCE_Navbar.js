@@ -35,6 +35,7 @@ const TCE_navbar = () => {
       duration: 0.5,
       transform: "translateX(0)",
     });
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -62,7 +63,9 @@ const TCE_navbar = () => {
               <li>
                 <Link to="/careers">Careers</Link>
               </li>
-              <li>Contact</li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -85,7 +88,9 @@ const TCE_navbar = () => {
                 Careers
               </Link>
             </li>
-            <li>Contact</li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </div>
