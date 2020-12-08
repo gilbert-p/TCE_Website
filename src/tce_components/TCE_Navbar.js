@@ -27,6 +27,16 @@ const TCE_navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const closeNav = () => {
+    let isOpen = showMenu;
+    if (!isOpen) return;
+    gsap.to(".mobile-menu-container", {
+      opacity: 1,
+      duration: 0.5,
+      transform: "translateX(0)",
+    });
+  };
+
   return (
     <>
       <div className="navbar-container">
@@ -49,7 +59,9 @@ const TCE_navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>Careers</li>
+              <li>
+                <Link to="/careers">Careers</Link>
+              </li>
               <li>Contact</li>
             </ul>
           </div>
@@ -59,12 +71,20 @@ const TCE_navbar = () => {
         <div className="mobile-nav-container">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={closeNav}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={closeNav}>
+                About
+              </Link>
             </li>
-            <li>Careers</li>
+            <li>
+              <Link to="/careers" onClick={closeNav}>
+                Careers
+              </Link>
+            </li>
             <li>Contact</li>
           </ul>
         </div>
