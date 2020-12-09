@@ -36,6 +36,7 @@ const TCE_navbar = () => {
       transform: "translateX(0)",
     });
     window.scrollTo(0, 0);
+    setShowMenu(!showMenu);
   };
 
   return (
@@ -55,7 +56,7 @@ const TCE_navbar = () => {
           <div className="nav-links-container">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/TCE_Website">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -74,7 +75,7 @@ const TCE_navbar = () => {
         <div className="mobile-nav-container">
           <ul>
             <li>
-              <Link to="/" onClick={closeNav}>
+              <Link to="/TCE_Website" onClick={closeNav}>
                 Home
               </Link>
             </li>
@@ -89,7 +90,9 @@ const TCE_navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={closeNav}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -7,8 +7,11 @@
   left: 0;
   margin-bottom: 30px;
   margin-top: calc(80px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 45% 0%;
 
-  &:after {
+  &:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -18,20 +21,7 @@
 
     background-color: #222222;
     opacity: 40%;
-    z-index: -1;
-  }
-
-  .hero-img-container {
-    position: absolute;
-    width: 100%;
-    max-width: 420px;
-    z-index: -2;
-    overflow: hidden;
-    > img {
-      position: relative;
-      background-size: cover;
-      height: 310px;
-    }
+    z-index: 1;
   }
 
   .hero-content {
@@ -41,6 +31,7 @@
     // background-color: lightseagreen;
     margin-left: 20px;
     padding-top: 20px;
+    z-index: 1;
 
     .title-container {
       display: flex;

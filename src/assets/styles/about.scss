@@ -1,3 +1,44 @@
+p {
+  line-height: 1.5em;
+}
+
+// .hero-container {
+//   position: relative;
+//   width: 100%;
+//   max-width: 420px;
+//   min-width: 320px;
+//   height: 310px;
+//   // background-color: lightgreen;
+//   left: 0;
+//   margin-bottom: 30px;
+//   margin-top: calc(80px);
+
+//   .hero-img-container {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -2;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: 45% 0%;
+
+//     > img {
+//       position: relative;
+
+//       height: 310px;
+//     }
+//   }
+
+//   .hero-content {
+//     position: relative;
+//     max-width: 310px;
+//     height: 260px;
+//     // background-color: lightseagreen;
+//     margin-left: 20px;
+//     padding-top: 20px;
+//   }
+// }
+
 .about-company {
   position: relative;
   width: 100%;
@@ -17,19 +58,6 @@
         font-size: 18px;
         font-weight: 700;
       }
-
-      //   &:after {
-      //     content: "";
-      //     position: absolute;
-      //     text-align: center;
-      //     width: 35ch;
-      //     height: 3px;
-      //     left: inherit;
-      //     top: inherit;
-      //     transform: translate(-50%, 100%);
-      //     // padding-top: 10px;
-      //     background-color: black;
-      //   }
     }
 
     #summary-description {
@@ -46,12 +74,12 @@
     min-width: 320px;
     margin-bottom: 100px;
     background-color: #3c3c3c;
-
-    padding: 20px 20px 30px 20px;
+    padding-bottom: 20px;
 
     .bio-img {
       width: 100%;
       height: auto;
+      padding: 20px 20px 30px 20px;
       > img {
         background-size: cover;
         width: 100%;
@@ -64,6 +92,7 @@
       max-width: 420px;
       min-width: 320px;
       text-align: left;
+      padding-left: 20px;
 
       .bio-title {
         margin-left: -1px;
@@ -85,6 +114,8 @@
     }
 
     .bio-summary {
+      padding-left: 20px;
+      padding-right: 20px;
       > p {
         color: white;
       }

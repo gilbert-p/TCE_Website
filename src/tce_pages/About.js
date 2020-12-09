@@ -12,15 +12,17 @@ const About = () => {
   return (
     <>
       <section className="hero-section">
-        <div className="hero-container">
-          <div className="hero-img-container">
-            {screen === "md" || screen === "lg" ? (
-              <img src={landing_hero_img_lg} alt="company vans tce" />
-            ) : (
-              <img src={landing_hero_img_sm} alt="company vans tce" />
-            )}
-          </div>
-        </div>
+        <div
+          className="hero-container"
+          style={
+            screen === "md" || screen === "lg"
+              ? {
+                  backgroundImage: `url(${landing_hero_img_lg})`,
+                }
+              : {
+                  backgroundImage: `url(${landing_hero_img_sm})`,
+                }
+          }></div>
       </section>
 
       <section className="about-company">
@@ -32,14 +34,14 @@ const About = () => {
             <p>
               From the start of the company in 2019, the core values instilled
               by the CEO allowed the Delivery Service Provider to rise to be one
-              of the most prominent in the field of service providers in the
-              surrounding areas throughout Los Angeles. With the CEO’s vast
-              experience in managing large scale operations that range from
-              notable Fortune 500 companies such as Tesla, and General Electric,
-              to other exceptional manufacturing companies such as Shell Solar,
-              and Solecta; the company has instilled a team oriented culture
-              with a strong focus on providing excellent customer service, and
-              the streamlining of business processes.
+              of the most prominent in the field of service providers throughout
+              Los Angeles. With the CEO’s vast experience in managing large
+              scale operations that range from notable Fortune 500 companies
+              such as Tesla, and General Electric, to other exceptional
+              manufacturing companies such as Shell Solar, and Solecta; the
+              company has instilled a team oriented culture with a strong focus
+              in providing excellent customer service, and the streamlining of
+              business processes.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ import LandingPage from "./tce_pages/LandingPage";
 import About from "./tce_pages/About";
 import Careers from "./tce_pages/Careers";
 import Contact from "./tce_pages/Contact";
-
+import Apply from "./tce_pages/Apply";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Main() {
@@ -17,7 +17,7 @@ function Main() {
           <Navbar />
           <div className="main-content">
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/TCE_Website">
                 <LandingPage />
               </Route>
               <Route path="/about">
@@ -28,6 +28,9 @@ function Main() {
               </Route>
               <Route path="/contact">
                 <Contact />
+              </Route>
+              <Route path="/apply">
+                <Apply />
               </Route>
             </Switch>
           </div>

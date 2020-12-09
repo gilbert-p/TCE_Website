@@ -11,15 +11,17 @@ const Contact = () => {
   return (
     <>
       <section className="hero-section">
-        <div className="hero-container">
-          <div className="hero-img-container">
-            {screen === "md" || screen === "lg" ? (
-              <img src={landing_hero_img_lg} alt="company vans tce" />
-            ) : (
-              <img src={landing_hero_img_sm} alt="company vans tce" />
-            )}
-          </div>
-        </div>
+        <div
+          className="hero-container"
+          style={
+            screen === "md" || screen === "lg"
+              ? {
+                  backgroundImage: `url(${landing_hero_img_lg})`,
+                }
+              : {
+                  backgroundImage: `url(${landing_hero_img_sm})`,
+                }
+          }></div>
       </section>
 
       <div className="contact-form-container">

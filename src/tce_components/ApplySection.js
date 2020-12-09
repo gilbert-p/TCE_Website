@@ -1,7 +1,12 @@
 import React from "react";
 import "../assets/styles/apply_section.scss";
+import { Link } from "react-router-dom";
 
 const ApplySection = () => {
+  const scrollDefault = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="cta-apply">
       <div className="cta-apply-container">
@@ -15,7 +20,11 @@ const ApplySection = () => {
           </p>
         </div>
         <div className="cta-button-apply">
-          <h2 className="cta-title">APPLY!</h2>
+          <h2 className="cta-title">
+            <Link to="/apply" onClick={scrollDefault}>
+              Apply
+            </Link>
+          </h2>
         </div>
       </div>
     </section>
