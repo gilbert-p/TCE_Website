@@ -87,6 +87,12 @@
   .hero-container {
     height: 420px;
     // background-color: lightskyblue;
+    max-width: 1120px;
+
+    &:before {
+      height: 420px;
+    }
+
     .hero-content {
       left: 50%;
       top: 50%;

@@ -14,6 +14,7 @@ const About = () => {
       <section className="hero-section">
         <div
           className="hero-container"
+          id="about-hero"
           style={
             screen === "md" || screen === "lg"
               ? {
@@ -49,24 +50,27 @@ const About = () => {
           <div className="bio-img">
             <img src={bio_portrait} alt="Eric Culberson Portrait Picture" />
           </div>
-          <div className="bio-title-info">
-            <div className="bio-title">
-              <h2>Eric Culberson</h2>
+          <div className="bio-info">
+            <div className="bio-title-info">
+              <div className="bio-title">
+                <h2>Eric Culberson</h2>
+              </div>
+              <div className="bio-subtitle">
+                <h3>Founder</h3>
+              </div>
             </div>
-            <div className="bio-subtitle">
-              <h3>Founder</h3>
+            <div className="bio-summary">
+              <p>
+                With a strong background in electrical engineering and
+                management in manufacturing, Eric Culberson knows how to handle
+                both the low level and high level operations of running a
+                business. With over 30 years of experience in management
+                operations, Eric understands what is required to find success in
+                any situation and is laser focused on expanding the company
+                while maintaining the status quo of excellence in both employees
+                and management.
+              </p>
             </div>
-          </div>
-          <div className="bio-summary">
-            <p>
-              With a strong background in electrical engineering and management
-              in manufacturing, Eric Culberson knows how to handle both the low
-              level and high level operations of running a business. With over
-              30 years of experience in management operations, Eric understands
-              what is required to find success in any situation and is laser
-              focused on expanding the company while maintaining the status quo
-              of excellence in both employees and management.
-            </p>
           </div>
         </div>
       </section>

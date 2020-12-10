@@ -1,3 +1,9 @@
+#apply-hero {
+  &:before {
+    opacity: 0;
+  }
+}
+
 .apply-info-container {
   position: relative;
   display: flex;
@@ -17,7 +23,7 @@
     }
 
     .apply-section-info-body {
-      line-height: 1.45em;
+      line-height: 1.5em;
 
       ul {
         padding-left: 20px;
@@ -33,9 +39,9 @@
   position: relative;
   width: 100%;
   height: auto;
+  border: 2px solid #049ef4;
+  border-radius: 10px;
   margin-bottom: 30px;
-
-  //   background-color: lightskyblue;
 
   .contact-title-container {
     text-align: center;
@@ -44,8 +50,7 @@
 
   #form-container {
     position: relative;
-    max-width: 420px;
-    min-width: 320px;
+    width: 100%;
     height: auto;
     // background-color: lightcoral;
     overflow: hidden;
@@ -100,6 +105,23 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .apply-info-container {
+    max-width: 100%;
+  }
+
+  .apply-form-container {
+    // background-color: rgb(71, 71, 71);
+
+    #form-container {
+      left: 50%;
+      transform: translateX(-50%);
+      // color: white;
+      font-weight: bold;
     }
   }
 }

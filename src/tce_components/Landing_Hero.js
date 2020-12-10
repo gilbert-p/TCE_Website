@@ -42,19 +42,6 @@ const Landing_Hero = () => {
             </h2>
           </div>
         </div>
-        {/* <div
-          className="hero-img-container"
-          style={
-            screen === "md" || screen === "lg"
-              ? {
-                  backgroundImage: `url(${landing_hero_img_lg})`,
-                }
-              : {
-                  backgroundImage: `url(${landing_hero_img_sm})`,
-                }
-          }></div> */}
-
-        {/* <img className="hero-container" src="" alt="tce_vans_img" /> */}
       </div>
     </section>
   );

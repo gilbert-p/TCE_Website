@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/styles/apply_page.scss";
 import "../assets/styles/landing_hero.scss";
 import landing_hero_img_sm from "../assets/img/hero_img_sm.png";
-import landing_hero_img_lg from "../assets/img/hero_img_lg.png";
+import landing_hero_img_lg from "../assets/img/now_hiring_lg.png";
 import dax7_map from "../assets/img/DAX7_google_maps.png";
 import useBreakpoints from "../custom_hooks/useBreakpoint";
 
@@ -14,13 +14,16 @@ const Apply = () => {
       <section className="hero-section">
         <div
           className="hero-container"
+          id="apply-hero"
           style={
             screen === "md" || screen === "lg"
               ? {
                   backgroundImage: `url(${landing_hero_img_lg})`,
                 }
               : {
-                  backgroundImage: `url(${landing_hero_img_sm})`,
+                  height: "200px",
+                  backgroundImage: `url(${landing_hero_img_lg})`,
+                  backgroundPosition: "15% 50%",
                 }
           }></div>
       </section>
