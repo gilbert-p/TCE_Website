@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "../assets/styles/tce_nav.scss";
+import "../assets/dashboard_styles/dashboard_nav.scss";
 import tce_logo from "../assets/img/TCE_LOGO@sm.png";
+
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
-const TCE_navbar = () => {
+const Dashboard_Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [duration, setDuration] = useState(0.3);
 
@@ -50,7 +51,7 @@ const TCE_navbar = () => {
             <img src={tce_logo} alt="tce_logo" />
           </div>
           <div className="company-name">
-            <h1>Temple Culberson Enterprises</h1>
+            <h1>Admin Dashboard</h1>
           </div>
           <div className="nav-button" onClick={mobileMenu}>
             <i className="gg-menu-boxed"></i>
@@ -59,16 +60,7 @@ const TCE_navbar = () => {
           <div className="nav-links-container">
             <ul>
               <li>
-                <Link to="/TCE_Website">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/TCE_Website">TCE Homepage</Link>
               </li>
             </ul>
           </div>
@@ -79,22 +71,7 @@ const TCE_navbar = () => {
           <ul>
             <li>
               <Link to="/TCE_Website" onClick={closeNav}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={closeNav}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/careers" onClick={closeNav}>
-                Careers
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={closeNav}>
-                Contact
+                TCE Homepage
               </Link>
             </li>
           </ul>
@@ -104,4 +81,4 @@ const TCE_navbar = () => {
   );
 };
 
-export default TCE_navbar;
+export default Dashboard_Navbar;

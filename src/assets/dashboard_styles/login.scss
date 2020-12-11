@@ -1,0 +1,108 @@
+// .site-container {
+//   background: linear-gradient(
+//     129deg,
+//     rgba(6, 191, 250, 1) 12%,
+//     rgba(13, 81, 224, 1) 100%
+//   );
+// }
+// .login-background {
+//   position: relative;
+//   width: 100%;
+//   height: 1000px;
+//   z-index: -1;
+//   background: linear-gradient(
+//     129deg,
+//     rgba(6, 191, 250, 1) 12%,
+//     rgba(13, 81, 224, 1) 100%
+//   );
+// }
+
+.login-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  background: linear-gradient(
+    129deg,
+    rgba(6, 191, 250, 1) 12%,
+    rgba(13, 81, 224, 1) 100%
+  );
+
+  .login-form-container {
+    position: relative;
+    max-width: 420px;
+    min-width: 320px;
+    height: auto;
+    margin-bottom: 30px;
+
+    //   background-color: lightskyblue;
+
+    .login-title-container {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    #form-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      //   background-color: lightcoral;
+      overflow: hidden;
+
+      #login-form {
+        position: relative;
+        margin-top: 1em;
+        padding-left: 20px;
+
+        .form-inner-container {
+          //   background-color: slateblue;
+
+          .field-name {
+            display: block;
+            margin-bottom: 3px;
+          }
+          input[type="text"],
+          input[type="email"],
+          input[type="password"] {
+            width: calc(100% - 20px);
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 1em;
+            margin-bottom: 10px;
+          }
+
+          textarea {
+            width: calc(100% - 20px);
+            height: 80px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 1em;
+            padding-top: 1em;
+            margin-bottom: 10px;
+          }
+
+          .form-submit-button-container {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            #login-submit {
+              width: 150px;
+              height: 50px;
+              padding: 10px 0 10px 0;
+              font-size: 1.5em;
+              text-transform: uppercase;
+              border-radius: 25px;
+              border: 2px solid #049ef4;
+              background-color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

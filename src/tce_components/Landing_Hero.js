@@ -34,13 +34,11 @@ const Landing_Hero = () => {
           <div className="hero-subtitle">
             <h4>Begin your journey today and begin delivering with Amazon</h4>
           </div>
-          <div className="cta-button-apply">
-            <h2 className="cta-title">
-              <Link to="/apply" onClick={scrollDefault}>
-                Apply
-              </Link>
-            </h2>
-          </div>
+          <Link to="/apply" onClick={scrollDefault}>
+            <div className="cta-button-apply">
+              <h2 className="cta-title">Apply</h2>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

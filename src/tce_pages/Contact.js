@@ -5,6 +5,7 @@ import landing_hero_img_sm from "../assets/img/hero_img_sm.png";
 import landing_hero_img_lg from "../assets/img/Ilya_Pavlov_Unsplash.png";
 import dax7_map from "../assets/img/DAX7_google_maps.png";
 import useBreakpoints from "../custom_hooks/useBreakpoint";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [screen, setScreen] = useState(useBreakpoints());
@@ -104,7 +105,9 @@ const Contact = () => {
         </div>
         <div className="map-location-container">
           <div className="map-image-container">
-            <img src={dax7_map} alt="" />
+            <a href="https://goo.gl/maps/Vh292doZvD6MZbWz7">
+              <img src={dax7_map} alt="" />
+            </a>
           </div>
           <div className="location-info-container">
             <div className="location-header">
