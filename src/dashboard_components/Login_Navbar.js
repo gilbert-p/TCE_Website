@@ -47,12 +47,9 @@ const Login_Navbar = () => {
     <>
       <div className="navbar-container">
         <div className="navbar-content">
-          <Link to="/TCE_Website">
-            <div className="tce-logo">
-              <img src={tce_logo} alt="tce_logo" />
-            </div>
-          </Link>
-
+          <div className="tce-logo">
+            <img src={tce_logo} alt="tce_logo" />
+          </div>
           <div className="company-name">
             <h1>Admin Dashboard</h1>
           </div>
@@ -63,19 +60,7 @@ const Login_Navbar = () => {
           <div className="nav-links-container">
             <ul>
               <li>
-                <Link to="/TCE_Website">Overview</Link>
-              </li>
-              <li>
-                <Link to="/TCE_Website">Applicants</Link>
-              </li>
-              <li>
-                <Link to="/TCE_Website">Messages</Link>
-              </li>
-              <li>
-                <Link to="/TCE_Website">DVCR</Link>
-              </li>
-              <li>
-                <Link to="/TCE_Website">Scorecard</Link>
+                <Link to="/TCE_Website">TCE Homepage</Link>
               </li>
             </ul>
           </div>
@@ -85,19 +70,9 @@ const Login_Navbar = () => {
         <div className="mobile-nav-container">
           <ul>
             <li>
-              <Link to="/TCE_Website">Overview</Link>
-            </li>
-            <li>
-              <Link to="/TCE_Website">Applicants</Link>
-            </li>
-            <li>
-              <Link to="/TCE_Website">Messages</Link>
-            </li>
-            <li>
-              <Link to="/TCE_Website">DVCR</Link>
-            </li>
-            <li>
-              <Link to="/TCE_Website">Scorecard</Link>
+              <Link to="/TCE_Website" onClick={closeNav}>
+                TCE Homepage
+              </Link>
             </li>
           </ul>
         </div>

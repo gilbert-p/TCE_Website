@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/tce_footer.scss";
+import { Link } from "react-router-dom";
 
 const TCE_Footer = () => {
   return (
@@ -18,7 +19,9 @@ const TCE_Footer = () => {
               <div className="footer-link">
                 <h5>Company</h5>
                 <h5>Contact</h5>
-                <h5>Portal</h5>
+                <h5>
+                  <Link to="/login">Portal</Link>
+                </h5>
               </div>
             </div>
           </div>
@@ -31,7 +34,7 @@ const TCE_Footer = () => {
                 <h2>Trust Commitment Excellence</h2>
               </div>
               <div className="business-structure">
-                <h5>Temple Culberson LLC @ 2020</h5>
+                <h5>Temple Culberson LLC @ 2021</h5>
               </div>
             </div>
           </div>

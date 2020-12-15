@@ -9,38 +9,31 @@ import About from "../tce_pages/About";
 import Careers from "../tce_pages/Careers";
 import Contact from "../tce_pages/Contact";
 import Apply from "../tce_pages/Apply";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter,
+  useRouteMatch,
+} from "react-router-dom";
 
 const LandingPage = () => {
+  let { path, url } = useRouteMatch();
+  // console.log(path);
+  // console.log(url);
   return (
     <>
-      <Router>
-        <Navbar />
-
-        <Switch>
-          <Route path="/TCE_Website">
-            <Landing_Hero />
-            <InfoCards />
-            <MissionStatement />
-            <ApplySection />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/careers">
-            <Careers />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/apply">
-            <Apply />
-          </Route>
-        </Switch>
+      <Navbar />
+      <div className="main-content">
+        <Landing_Hero />
+        <InfoCards />
+        <MissionStatement />
+        <ApplySection />
         <Footer />
-      </Router>
+      </div>
     </>
   );
 };
 
-export default LandingPage;
+export default withRouter(LandingPage);
