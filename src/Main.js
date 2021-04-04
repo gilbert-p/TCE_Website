@@ -12,11 +12,15 @@ import Login from "./dashboard_pages/Login";
 import DashboardHome from "./dashboard_pages/AdminDashboard";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import CustomProperties from 'react-custom-properties';
 
 function Main() {
   return (
     <>
       <div className="site-container">
+
+        <CustomProperties global properties= {{'--custom-width': '420px'}}>
+
         <Router>
           {/* <div className="main-content"> */}
           <Switch>
@@ -38,12 +42,18 @@ function Main() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/dashboard/home">
+            <Route path="/dashboard">
               <DashboardHome />
             </Route>
           </Switch>
           {/* </div> */}
         </Router>
+
+        </CustomProperties>
+
+
+
+
       </div>
     </>
   );

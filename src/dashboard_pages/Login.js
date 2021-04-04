@@ -11,7 +11,7 @@ const Login = () => {
 
   return (
     <>
-      <LoginNav />
+      {/* <LoginNav /> */}
       <div className="main-content">
         <div className="login-content-container">
           <div className="login-form-container">
@@ -48,7 +48,7 @@ const Login = () => {
                     //   onChange={(e) => setName(e.currentTarget.value)}
                   />
 
-                  <Link to="/dashboard/home">
+                  <Link to="/dashboard">
                     <div className="form-submit-button-container">
                       <input
                         className="form-control"

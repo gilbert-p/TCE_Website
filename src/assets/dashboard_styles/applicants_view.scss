@@ -1,0 +1,326 @@
+
+
+.row-container {
+    margin-top: 20px;
+}
+
+.tbl-container {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tbl-header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .tbl-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 21px;
+    }
+}
+
+.col-titles {
+    height: 40px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #F6F9FC;
+    
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        li{
+            display: inline;
+            font-weight: bold;
+            font-size: 11px;
+            color: #8898AA;
+        }
+    }
+}
+
+.tbl-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    // background-color: lightblue;
+    // margin-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .name {
+        font-weight: 600;
+    }
+
+    .tbl-cell {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+        // background-color: red;
+
+
+        > p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        &:nth-child(2) {
+            // background-color: green;
+
+            > p {
+                &:nth-child(1){
+                    font-weight: 600;
+                }
+                &:nth-child(2){
+                    color: #6A6A6A;
+                }
+            }
+            
+        }
+    }
+}
+
+.tbl-row:nth-child(n + 1) {
+    margin-top: 20px;
+}
+
+
+
+.table-button {
+    background-color: #0d09ffd0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 1px 6px 0px black;
+
+    .btn-text {
+        
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+#action-button {
+    position: relative;
+    top: -10px;
+    color: white;
+    font-weight: bold;
+    background-color: #0091f1;
+    border: 1px solid black;
+
+}
+
+
+.pagination-block {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    // background-color: red;
+
+    .button-container {
+        display: flex;
+        margin-right: 25px;
+        justify-content: space-around;
+        // background-color: lightcoral;
+
+        .pagination-button {
+            width: 25px;
+            height: 25px;
+            margin: 0 8px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: #2393EF;
+        }
+    }
+}
+
+/** MODAL STYLING **/
+
+.modal-container {
+    position: absolute;
+    // display: flex;
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    // left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    height: auto;
+    margin-top: 80px;
+    padding: 0 30px 20px;
+    border: 1px solid black;
+    z-index: 2;
+    background-color: white;
+}
+
+.button-header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100%);
+    left: -0px;
+    top: 0;
+    // margin-top: 40px;
+    padding: 5px 10px;
+    height: 40px;
+    background-color: #3F3F3F;
+
+    .close-button {
+        position: relative;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+
+.modal-container {
+    section {
+        margin-top: 50px;
+    }
+}
+
+.modal-title {
+    display: block;
+    width: 100%;
+    height: 1em;
+    font-size:1em;
+    font-weight: bold;
+    
+
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     width: calc(43%);
+    //     height: 4px;
+    //     left: 20px;
+    //     top: 80px;
+    //     border-radius: 5px;
+    //     // margin: 0 20px;
+    //     background-color: #E7E7E7;
+
+    // }
+}
+
+.modal-subsection {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10px;
+    padding-left: 20px;
+    // background-color: orange;
+    font-size: 12px;
+
+    .modal-block-item {
+        display: flex;
+        height: auto;
+        width: 100%;
+        // background-color: lightsalmon;
+    }
+
+}
+
+.modal-block-item {
+    > p {
+        display: inline-block;
+        // background-color: red;
+        width: auto;
+        &:nth-child(2){
+            position: relative;
+            left: 5px;
+            font-weight: 600;
+        }
+    }
+}
+
+.color-label {
+    position: relative;
+    width: 40px;
+    height: 1.6em;
+    top: 10px;
+    left: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    background-color: var(--dynamic-color-label);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-subsection {
+    .col-flex {
+        position: relative;
+        top: -10px;
+        left: 15px;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .modal-block-item {
+            position: relative;
+        }
+    }
+}
+
+.numbered-list-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    > p {
+        position: relative;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background-color: #3F3F3F;
+        color: white;
+        font-weight: bold;
+    }
+
+    .row-info-block {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 3px;
+        text-align: left;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+}
+
+.modal-block-item{
+    textarea {
+        min-height: 40px;
+        max-height: 60px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  }
+  

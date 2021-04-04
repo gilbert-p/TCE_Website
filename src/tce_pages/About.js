@@ -6,6 +6,7 @@ import landing_hero_img_sm from "../assets/img/tce_team_pic_sm.png";
 import bio_portrait from "../assets/img/eric_culberson_portrait.png";
 import useBreakpoints from "../custom_hooks/useBreakpoint";
 import Navbar from "../tce_components/TCE_Navbar";
+import Footer from "../tce_components/TCE_Footer";
 
 const About = () => {
   const [screen, setScreen] = useState(useBreakpoints());
@@ -77,6 +78,7 @@ const About = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   );

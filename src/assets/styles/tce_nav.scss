@@ -56,7 +56,7 @@
   position: fixed;
   display: none;
   opacity: 0;
-  left: 100%;
+  left: calc(100%);
   // transform: translateX(-100%);
   width: 175px;
   height: 100vh;

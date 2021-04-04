@@ -1,10 +1,10 @@
-#apply-hero {
-  &:before {
-    opacity: 0;
+  #apply-hero {
+    &:before {
+      opacity: 0;
+    }
   }
-}
 
-.apply-info-container {
+  .apply-info-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,81 +33,61 @@
       }
     }
   }
-}
-
-.apply-form-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border: 2px solid #049ef4;
-  border-radius: 10px;
-  margin-bottom: 30px;
-
-  .contact-title-container {
-    text-align: center;
-    font-size: 1.5em;
   }
 
-  #form-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    // background-color: lightcoral;
-    overflow: hidden;
 
-    #contact-form {
-      position: relative;
-      margin-top: 1em;
-      padding-left: 20px;
-
-      .form-inner-container {
-        // background-color: slateblue;
-
-        .field-name {
-          display: block;
-          margin-bottom: 3px;
-        }
-        input[type="text"],
-        input[type="email"] {
-          width: calc(100% - 20px);
-          height: 35px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          padding-left: 1em;
-          margin-bottom: 10px;
-        }
-
-        textarea {
-          width: calc(100% - 20px);
-          height: 80px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          padding-left: 1em;
-          padding-top: 1em;
-          margin-bottom: 10px;
-        }
-
-        .form-submit-button-container {
-          text-align: center;
-          margin-top: 10px;
-          margin-bottom: 20px;
-
-          #contact-submit {
-            width: 150px;
-            height: 50px;
-            padding: 10px 0 10px 0;
-            font-size: 1.5em;
-            text-transform: uppercase;
-            border-radius: 25px;
-            border: 2px solid #049ef4;
-            background-color: white;
-            font-weight: bold;
-          }
-        }
+  #employment-history {
+    .form-container-group {
+      // justify-content: flex-start;
+      >p {
+        margin: 0;
       }
     }
   }
-}
+
+  // .employment-history-block {
+  //   > p {
+  //     display: inline-block;
+  //   }
+  // }
+
+  .employment-history-content-container {
+
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+
+    .employment-history-block {
+      padding-left: 20px;
+      margin-bottom: 80px;
+      background-color: #2baddcc0;
+      border-radius: 0 0 5px 5px;
+    }
+
+  }
+
+  
+
+
+  .job-key {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    // transform:translateY(-40px);
+    font-size: 24px;
+    width: auto;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    background-color: black;
+    color: white;
+    z-index: 1;
+
+    > p {
+      margin: 0;
+    }
+  }
+
 
 @media screen and (min-width: 768px) {
   .apply-info-container {

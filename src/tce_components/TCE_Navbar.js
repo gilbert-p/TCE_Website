@@ -12,16 +12,17 @@ const TCE_navbar = () => {
     let isOpen = showMenu;
     if (!isOpen) {
       gsap.to(".mobile-menu-container", {
+        display: "flex",
         opacity: 1,
         duration,
-        transform: "translateX(-100%)",
-        display: "inline-block",
+        left: "calc(100% - 175px)",
+
       });
     } else {
       gsap.to(".mobile-menu-container", {
         opacity: 0,
         duration,
-        transform: "translateX(0)",
+        left: "100%",
         display: "none",
       });
     }

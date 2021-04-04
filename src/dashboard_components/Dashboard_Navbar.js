@@ -1,28 +1,31 @@
 import React, { useState } from "react";
-import "../assets/dashboard_styles/dashboard_nav.scss";
+// import "../assets/dashboard_styles/dashboard_nav.scss";
 import tce_logo from "../assets/img/TCE_LOGO@sm.png";
 
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import { gsap } from "gsap";
 
 const Login_Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [duration, setDuration] = useState(0.3);
 
+  let { path, url } = useRouteMatch();
+
   const mobileMenu = () => {
     let isOpen = showMenu;
     if (!isOpen) {
       gsap.to(".mobile-menu-container", {
+        display: "flex",
         opacity: 1,
         duration,
-        transform: "translateX(-100%)",
-        display: "inline-block",
+        left: "calc(100% - 175px)",
+
       });
     } else {
       gsap.to(".mobile-menu-container", {
         opacity: 0,
         duration,
-        transform: "translateX(0)",
+        left: "100%",
         display: "none",
       });
     }
@@ -47,7 +50,7 @@ const Login_Navbar = () => {
     <>
       <div className="navbar-container">
         <div className="navbar-content">
-          <Link to="/TCE_Website">
+          <Link to="TCE_Website">
             <div className="tce-logo">
               <img src={tce_logo} alt="tce_logo" />
             </div>
@@ -63,10 +66,10 @@ const Login_Navbar = () => {
           <div className="nav-links-container">
             <ul>
               <li>
-                <Link to="/TCE_Website">Overview</Link>
+                <Link to="/">Overview</Link>
               </li>
               <li>
-                <Link to="/TCE_Website">Applicants</Link>
+                <Link to="/applicants">Applicants</Link>
               </li>
               <li>
                 <Link to="/TCE_Website">Messages</Link>
@@ -85,10 +88,10 @@ const Login_Navbar = () => {
         <div className="mobile-nav-container">
           <ul>
             <li>
-              <Link to="/TCE_Website">Overview</Link>
+              <Link to="/dashboard">Overview</Link>
             </li>
             <li>
-              <Link to="/TCE_Website">Applicants</Link>
+              <Link to="/dashboard/applicants">Applicants</Link>
             </li>
             <li>
               <Link to="/TCE_Website">Messages</Link>

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import Navbar from "../tce_components/TCE_Navbar";
+import Footer from "../tce_components/TCE_Footer";
 import "../assets/styles/landing_hero.scss";
 import "../assets/styles/contact.scss";
 import landing_hero_img_sm from "../assets/img/hero_img_sm.png";
 import landing_hero_img_lg from "../assets/img/Ilya_Pavlov_Unsplash.png";
+import "../assets/styles/utility/form.scss";
+
 import dax7_map from "../assets/img/DAX7_google_maps.png";
 import useBreakpoints from "../custom_hooks/useBreakpoint";
 import { Link } from "react-router-dom";
+
 
 const Contact = () => {
   const [screen, setScreen] = useState(useBreakpoints());
@@ -30,13 +34,13 @@ const Contact = () => {
                   }
             }></div>
         </section>
-        <div id="contact-content">
-          <div className="contact-form-container">
-            <div className="contact-title-container">
+        <div id="form-content">
+          <div className="form-container">
+            <div className="form-title-container">
               <h3>Contact Us</h3>
             </div>
             <div id="form-container" className="">
-              <form id="contact-form">
+              <form id="form-styling">
                 <div className="form-inner-container">
                   <label for="firstName" className="field-name">
                     First Name
@@ -125,6 +129,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
